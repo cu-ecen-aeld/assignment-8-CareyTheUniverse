@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+    /sbin/scull_load
+    /sbin/module_load faulty
+    modprobe hello
+    ;;
+  stop)
+    /sbin/scull_unload
+    /sbin/module_unload faulty
+    rmmod hello
+    ;;
+  *)
+    echo "Exiting"
+    exit 1
+esac
+
+exit 0
