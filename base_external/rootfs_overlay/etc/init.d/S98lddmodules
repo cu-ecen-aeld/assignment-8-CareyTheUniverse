@@ -4,15 +4,15 @@ case "$1" in
   start)
     /sbin/scull_load
     /sbin/module_load faulty
-    modprobe hello
+    /sbin/module_load hello
     ;;
   stop)
     /sbin/scull_unload
     /sbin/module_unload faulty
-    rmmod hello
+    /sbin/module_unload hello
     ;;
   *)
-    echo "Exiting"
+    echo "Usage: $0 {start|stop}"
     exit 1
 esac
 
