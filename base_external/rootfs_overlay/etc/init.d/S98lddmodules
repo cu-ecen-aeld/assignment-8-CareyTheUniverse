@@ -5,13 +5,11 @@ case "$1" in
     /sbin/scull_load
     /sbin/module_load faulty
     /sbin/module_load hello
-    /sbin/aesdchar_load
     ;;
   stop)
     /sbin/scull_unload
     /sbin/module_unload faulty
     /sbin/module_unload hello
-    /sbin/aesdchar_unload
     ;;
   *)
     echo "Usage: $0 {start|stop}"
