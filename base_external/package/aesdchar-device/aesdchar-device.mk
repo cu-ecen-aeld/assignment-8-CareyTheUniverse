@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESDCHAR_DEVICE = '6afb951643303af3b6ed335fe7219586fb603884'
+AESDCHAR_DEVICE = '55fa81b422ef34d62f233e4622486b07d332abd1'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
